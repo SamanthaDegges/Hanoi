@@ -5,17 +5,19 @@
   <title>Document</title>
   <link rel="stylesheet" href="hanoi.css"></link>
   <link rel="stylesheet" href ="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="animate.min.css">
+
 </head>
 <body>
   <div class = "container">
     <div class = "gameTitle">
       <div class= "row">
         <h3 class="text-center">Towers of Hanoi</h3>
-        <h5>Select a layer to begin. Try to make the last tower look like the first without placing a layer on a layer more narrow than itself.</h5>
+        <h5>Select a layer to begin. Try to stack the layers in the same formation onto a new tower, without placing a layer on a layer more narrow than itself.</h5>
       </div>
     </div>
 
-    <div class="row inline-block text-center">
+    <div class="row inline-block text-center" id="gameBoard">
       <div class="row" id="towers">
         <div class="tower inline-block" data-id="tower1">
         <div class="disc center-block one" data-id=1></div>
@@ -26,9 +28,10 @@
         <div class="tower col-lg-4 inline-block" data-id="tower2"></div>
         <div class="tower col-lg-4 inline-block" data-id="tower3"></div>
       </div>
+      <div><a href = "http://samanthadegges.github.io/Hanoi/"><img class="img-responsive" src = "thailand-bg.jpg"></img>New Game</a></div>
+    </div>
     </div>
 
-  </div>
   <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src = "haoni.js"></script>
   <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
