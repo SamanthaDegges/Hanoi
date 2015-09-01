@@ -17,6 +17,7 @@ function evalWidthsBeforePrepending(tower) {
     tower.prepend($selectedDisc);
     $selectedDisc.removeClass("highlight");
     return $selectedDisc= '';
+    winCheck(tower);
   } else {
     $selectedDisc.removeClass("highlight");
     return $selectedDisc= '';
@@ -38,4 +39,11 @@ function determine(e){
   } else {
     $selectedDisc = $(this).children().first().toggleClass("highlight");
   }
+}
+
+function winCheck(prependedToTower) {
+  console.log(prependedToTower);
+    if (prependedToTower.children().length===3) {
+      console.log("equal to 3.");
+    }
 }
