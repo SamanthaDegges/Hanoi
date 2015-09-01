@@ -16,7 +16,7 @@ function evalWidthsBeforePrepending(tower) {
     console.log('ta-dah!');
     tower.prepend($selectedDisc);
     $selectedDisc.removeClass("highlight");
-    if (tower.children().length === 3 && tower.data('id')==="tower3") {
+    if (tower.children().length === 3 ){//&& tower.data('id')==="tower3") {
       winCheck(tower);
     }
     return $selectedDisc= '';
