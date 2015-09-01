@@ -45,7 +45,7 @@ function determine(e){
 }
 
 function winCheck(prependedToTower) {
-  $("h5").text("You Win!").addClass("animated bounceInDown");
-  $("#gameBoard").addClass("animated fadeOutDown");//insert animation
+  $("h2").text("You Win!").addClass("animated bounceInDown");
+  $("#towers").addClass("animated fadeOutDown");
   return $selectedDisc= '';
 }
