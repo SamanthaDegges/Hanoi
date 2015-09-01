@@ -1,0 +1,53 @@
+.container {
+  max-width: 600px;
+  margin-top: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.tower {
+  padding-top: 200px;
+  background-image: url(tower-img.jpg);
+  background-position:center bottom;
+  display: inline-block;
+  border-bottom: 2px solid #c6a44c;
+  height: 350px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: 170px 320px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: center;
+
+}
+
+.highlight {
+  border: 5px solid #3f4a32;
+}
+
+.disc {
+  background-color: #7b8f1b;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+
+.one {
+  width: 50px;
+}
+
+.two {
+  width: 100px;
+}
+
+.three {
+  width: 150px;
+}
+
+.hidden {
+  display: hidden;
+}
