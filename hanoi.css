@@ -15,7 +15,7 @@
   height: 350px;
   width: 200px;
   background-repeat: no-repeat;
-  background-size: 170px 320px;
+  background-size: 100% 100%;
 }
 
 .labels {
