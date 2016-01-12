@@ -10,9 +10,9 @@
 
 </head>
 <body>
-  <div class = "container">
-    <div class = "row">
-      <div class= "medium-12 columns">
+  <div id="container">
+    <div class="row">
+      <div class="medium-12 columns">
         <h3 class="text-center">Towers of Hanoi</h3>
         <hr>
         <div id="instructions">
@@ -20,27 +20,33 @@
           <button class="btn btn-default difficulty" data-diff=3 type="submit">Easy</button>
           <button class="btn btn-default difficulty" data-diff=5 type="submit">Medium</button>
           <button class="btn btn-default difficulty" data-diff=7 type="submit">Advanced</button>
-            <button class="btn btn-default difficulty" data-diff=10 type="submit">Difficult</button>
-          <button class="right btn btn-warning newGame">
-            <a href = "http://samanthadegges.github.io/Hanoi/"><strong>New Game</strong></a>
-          </button>
+          <button class="btn btn-default difficulty" data-diff=10 type="submit">Difficult</button>
+          <div id="newGame"><button class="right btn btn-warning">
+            <a href="http://samanthadegges.github.io/Hanoi/"><strong>New Game</strong></a>
+          </button></div>
         </div>
         <br>
-        <h5><strong>How to Play: </strong>Try to stack the layers, in the same formation, onto a new tower without placing a layer above a layer more narrow than itself.</h5>
+        <h5><strong>How to Play: </strong><br>Try to stack the layers, in the same formation, onto a new tower without placing a layer above a layer more narrow than itself.</h5>
       </div>
-    </div>
 
     <div class="row inline-block" id="gameBoard">
       <div class="row" id="towers">
-        <div class="tower col-lg-4 inline-block" id="discsTower"></div>
-        <div class="tower col-lg-4 inline-block"></div>
-        <div class="tower col-lg-4 inline-block" id="lastTower"></div>
+        <div class="col-lg-10  col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
+          <div class="tower col-lg-4 col-md-4 col-sm-4 inline-block" id="discsTower"></div>
+          <div class="tower col-lg-4 col-md-4 col-sm-4 inline-block"></div>
+          <div class="tower col-lg-4 col-md-4 col-sm-4 inline-block" id="lastTower"></div>
+        </div>
       </div>
     </div>
+    <div id="smallNewGame"><button class="right btn btn-warning">
+      <a href="http://samanthadegges.github.io/Hanoi/"><strong>New Game</strong></a>
+    </button></div>
   </div>
+  </div>
+  <div id="footer"></div>
 
-  <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src = "haoni.js"></script>
-  <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="haoni.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
