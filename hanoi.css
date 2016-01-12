@@ -24,8 +24,8 @@ body {
   background-image: url(tower-img.jpg);
   background-position:center bottom;
   display: inline-block;
-  height: 70%;
-  width: 30%;
+  height: 350px;
+  width: 32%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -47,43 +47,39 @@ body {
 }
 
 #size1 {
-  width: 40px;
+  width: 30px;
 }
 
 #size2 {
-  width:55px;
+  width:45px;
 }
 
 #size3 {
-  width: 70px;
+  width: 60px;
 }
 
 #size4 {
-  width: 85px;
+  width: 75px;
 }
 
 #size5 {
-  width: 100px;
+  width: 90px;
 }
 
 #size6 {
-  width: 115px;
+  width: 105px;
 }
 
 #size7 {
-  width: 130px;
+  width: 120px;
 }
 
 #size8 {
-  width: 145px;
+  width: 135px;
 }
 
 #size9 {
-  width: 160px;
-}
-
-#size10 {
-  width: 175px;
+  width: 150px;
 }
 
 .hidden {
@@ -116,9 +112,11 @@ h5 {
     padding-left: 3em;
     padding-right: 3em;
   }
+
   #newGame {
     display: none;
   }
+
   #smallNewGame {
     display: block;
   }
