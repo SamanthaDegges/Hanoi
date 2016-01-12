@@ -11,7 +11,7 @@ function showDiscs(e){
   discQuantity = $(this).data('diff');
   for (var count = 1; count <= discQuantity; count++) {
     var disc = '<div class="disc center-block one" data-id='+count+' id='+' size'+count+'></div>';
-    $("#towers").children("#discsTower").append(disc);
+    $("#towers").find("#discsTower").append(disc);
   }
 }
 
