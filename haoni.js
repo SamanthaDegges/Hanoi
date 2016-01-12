@@ -7,11 +7,16 @@ function init() {
 }
 
 function showDiscs(e){
+  console.log('triggered.');
   $(".difficulty").attr('disabled',"disabled");
   discQuantity = $(this).data('diff');
+  console.log('discQuantity is: ', discQuantity);
+  console.log('pyrunning.');
   for (var count = 1; count <= discQuantity; count++) {
-    var disc = '<div class="disc center-block one" data-id='+count+' id='+' size'+count+'></div>';
-    $("#towers").children("#discsTower").append(disc);
+    console.log('looping. Count is: ', discQuantity);
+    var disc = '<div class="disc center-block one" data-id="'+count+'" id="'+'size'+count+'"></div>';
+    console.log('disc is: ', disc);
+    $("#towers").find("#discsTower").append(disc);
   }
 }
 
